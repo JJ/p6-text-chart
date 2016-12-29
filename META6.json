@@ -1,0 +1,17 @@
+{
+  "authors" : [
+    "JJ Merelo"
+  ],
+  "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "A simple module to generate text charts",
+  "name" : "Text::Chart",
+  "perl" : "6.c",
+  "provides" : {
+    "Text::Chart" : "lib/Text/Chart.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "git://github.com/JJ/p6-text-chart.git",
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}
