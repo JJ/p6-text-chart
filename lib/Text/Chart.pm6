@@ -10,7 +10,7 @@ sub vertical ( Int :$max = 10, Str :$chart-char = "▮", *@data ) is export  {
     my $chart;
     loop ( my $i = $max; $i > 0; $i-- ) {
 	loop ( my $j = 0; $j < @mapped-data.elems; $j++) {
-	    $chart ~= @mapped-data[$j] > $i ?? $chart-char !! $space; 
+	    $chart ~= @mapped-data[$j] >= $i ?? $chart-char !! $space; 
 	}
 	$chart ~= "\n";
     }
