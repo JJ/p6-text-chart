@@ -2,7 +2,7 @@ use v6;
 unit class Text::Chart;
 
 
-sub vertical is export ( Int :$max = 10, Str :$chart-char = "▮", *@data ) {
+sub vertical ( Int :$max = 10, Str :$chart-char = "▮", *@data ) is export  {
 
     my $data-max = (@data.map: {.abs}).max;
     my @mapped-data = map  { $max*abs( $_ )/$data-max }, @data;
