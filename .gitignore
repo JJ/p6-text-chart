@@ -12,3 +12,6 @@
 /resources/*.so
 /resources/*.dylib
 .precomp/
+
+# Emacs
+*~

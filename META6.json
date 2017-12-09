@@ -6,12 +6,17 @@
   "depends" : [ ],
   "description" : "A simple module to generate text charts",
   "name" : "Text::Chart",
+  "auth" : "github:JJ",
   "perl" : "6.c",
+  "license" : "GPL-3.0",
   "provides" : {
     "Text::Chart" : "lib/Text/Chart.pm6"
   },
   "resources" : [ ],
   "source-url" : "git://github.com/JJ/p6-text-chart.git",
-  "test-depends" : [ ],
+  "test-depends" : [ 
+        "Test",
+        "Test::META"
+  ],
   "version" : "0.0.1"
 }
