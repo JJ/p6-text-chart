@@ -9,10 +9,10 @@ sub vertical ( Int :$max = 10, Str :$chart-char = "▮", *@data ) is export  {
     my $space = " " x chars( $chart-char );
     my $chart;
     loop ( my $i = $max; $i > 0; $i-- ) {
-	loop ( my $j = 0; $j < @mapped-data.elems; $j++) {
-	    $chart ~= @mapped-data[$j] >= $i ?? $chart-char !! $space; 
-	}
-	$chart ~= "\n";
+	    loop ( my $j = 0; $j < @mapped-data.elems; $j++) {
+	        $chart ~= @mapped-data[$j] >= $i ?? $chart-char !! $space;
+	    }
+	    $chart ~= "\n";
     }
     return $chart;
 }
@@ -25,7 +25,8 @@ Text::Chart - Produces simple text charts from arrays
 
 =head1 SYNOPSIS
 
-  use Text::Chart;
+    use Text::Chart;
+    say vertical( max => 2, 1, 2, 1, 2)
 
 =head1 DESCRIPTION
 
