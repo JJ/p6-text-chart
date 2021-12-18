@@ -7,7 +7,7 @@ sub vertical ( Int :$max = 10, Str :$chart-char = $default-char, *@data ) is
                                                                      export  {
 
     my $data-max = (@data.map: {.abs}).max;
-    my @mapped-data = map  { $max*abs( $_ )/$data-max }, @data;
+    my @mapped-data = @data.map:  { $max*abs( $_ )/$data-max };
     my $space = " " x chars( $chart-char );
     my $chart;
     for $max...1 -> $i  {
