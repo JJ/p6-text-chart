@@ -2,8 +2,9 @@
 
 use Text::Chart;
 
-sub MAIN ( Int :$max = 10, Str :$chart-chars = "⬜", *@data ) {
+sub MAIN ( Int :$a-max, Str :$chart-chars = "⬜", *@data ) {
 
+    my $max = $a-max // max(@data)+1 ;
     say vertical( :$max, :$chart-chars, @data );
 }
 
