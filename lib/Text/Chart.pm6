@@ -1,6 +1,5 @@
 use v6;
-unit class Text::Chart;
-
+unit module Text::Chart;
 
 sub vertical ( Int :$max = 10, Str :$chart-char = "▮", *@data ) is export  {
 
