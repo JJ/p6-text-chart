@@ -1,30 +1,29 @@
 {
-    "authors" : [
-	"JJ Merelo"
-    ],
-    "build-depends" : [ ],
-    "depends" : [ ],
-    "description" : "A simple module to generate text charts",
-    "name" : "Text::Chart",
-    "auth" : "github:JJ",
-    "perl" : "6.c",
-    "license" : "GPL-3.0",
-    "provides" : {
-	"Text::Chart" : "lib/Text/Chart.pm6"
-    },
-    "resources" : [ ],
-    "source-url" : "git://github.com/JJ/p6-text-chart.git",
-    "test-depends" : [ 
-        "Test",
-        "Test::META"
-    ],
-    "tags": [
-	"charts",
-	"text",
-	"emojis"
-    ],
-    "version" : "0.0.1",
-    "scripts": {
-	"test": "zef test ."
-    }
+  "name": "Text::Chart",
+  "description": "A simple module to generate text charts",
+  "version": "0.0.1",
+  "perl": "6.c",
+  "authors": [
+    "JJ Merelo"
+  ],
+  "auth": "github:JJ",
+  "depends": [],
+  "build-depends": [],
+  "test-depends": [
+    "Test"
+  ],
+  "provides": {
+    "Text::Chart": "lib/Text/Chart.pm6"
+  },
+  "resources": [],
+  "license": "GPL-3.0",
+  "tags": [
+    "charts",
+    "text",
+    "emojis"
+  ],
+  "source-url": "git://github.com/JJ/p6-text-chart.git",
+  "scripts": {
+    "test": "zef test ."
+  }
 }
