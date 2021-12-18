@@ -1,7 +1,7 @@
 use v6;
 unit module Text::Chart;
 
-const $default-char = "█";
+constant $default-char is export = "█";
 
 sub vertical ( Int :$max = 10, Str :$chart-char = $default-char, *@data ) is
                                                                      export  {
