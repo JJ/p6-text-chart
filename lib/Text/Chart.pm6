@@ -3,8 +3,9 @@ unit module Text::Chart;
 
 constant $default-char is export = "█";
 
-sub vertical ( Int :$max = 10, Str :$chart-chars = $default-char, *@data ) is
-                                                                     export  {
+sub vertical ( Int :$max = 10,
+               Str :$chart-chars = $default-char,
+               *@data ) is export  {
 
     my $space = " ";
     my @chars = $chart-chars.comb;
