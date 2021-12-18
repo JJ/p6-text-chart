@@ -6,14 +6,12 @@ constant $default-char is export = "█";
 sub vertical ( Int :$max = 10, Str :$chart-chars = $default-char, *@data ) is
                                                                      export  {
 
-    my $data-max = (@data.map: {.abs}).max;
-    my @mapped-data = @data.map:  { $max*abs( $_ )/$data-max };
     my $space = " ";
     my @chars = $chart-chars.comb;
     my $chart;
-    for $max...1 -> $i  {
-	    for  0..^@mapped-data.elems -> $j {
-	        $chart ~= @mapped-data[$j] >= $i ?? @chars[$j % @chars.elems] !!
+    for $max^...0 -> $i  {
+	    for  0..^@data.elems -> $j {
+	        $chart ~= @data[$j] > $i ?? @chars[$j % @chars.elems] !!
                     $space;
 	    }
 	    $chart ~= "\n";
