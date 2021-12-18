@@ -1,7 +1,7 @@
 #!/usr/bin/env perl6
 
 
-sub MAIN ( Int :$max = 10, Str :$chart-char = "■", *@data ) {
+sub MAIN ( Int :$max = 10, Str :$chart-char = "█", *@data ) {
 
     my $data-max = (@data.map: {.abs}).max;
     my @mapped-data = map  { $max*abs( $_ )/$data-max }, @data;
