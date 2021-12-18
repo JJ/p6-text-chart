@@ -7,15 +7,12 @@
     "JJ Merelo"
   ],
   "auth": "zef:JJMERELO",
-  "depends": [],
-  "build-depends": [],
   "test-depends": [
     "Test"
   ],
   "provides": {
     "Text::Chart": "lib/Text/Chart.pm6"
   },
-  "resources": [],
   "license": "GPL-3.0",
   "tags": [
     "charts",
