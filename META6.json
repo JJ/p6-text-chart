@@ -6,7 +6,7 @@
   "authors": [
     "JJ Merelo"
   ],
-  "auth": "github:JJ",
+  "auth": "zef:JJMERELO",
   "depends": [],
   "build-depends": [],
   "test-depends": [
@@ -22,8 +22,5 @@
     "text",
     "emojis"
   ],
-  "source-url": "git://github.com/JJ/p6-text-chart.git",
-  "scripts": {
-    "test": "zef test ."
-  }
+  "source-url": "git://github.com/JJ/p6-text-chart.git"
 }
