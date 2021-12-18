@@ -1,4 +1,4 @@
-# Text::Chart
+# Text::Chart [![Test](https://github.com/JJ/p6-text-chart/actions/workflows/test.yaml/badge.svg)](https://github.com/JJ/p6-text-chart/actions/workflows/test.yaml)
 
 A simple Text Chart for Raku
 
@@ -31,5 +31,18 @@ Obtaining a result such as this one:
 Or you can use 
 
 ```text
-
+raku-text-chart --max=4 --chart-chars=▐░▓█ 3 2 1 4
 ```
+
+Which will give us:
+
+```text
+   █
+▐  █
+▐░ █
+▐░▓█
+```
+
+## License
+
+This is distributed under the GNU GPL v3
